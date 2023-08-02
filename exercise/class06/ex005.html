@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with data 2</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        button{
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Working with data 2</h1>
+     <button onclick="start()"> Click here to start</button>
+     <section id="result">
+        <p>Here it will show the result...</p>
+     </section>
+     <script>
+        function start(){
+            let name = window.prompt("What's your name?")
+            let res = window.document.getElementById("result")
+            res.innerHTML = `<p> Hey, <strong>${name}</strong>! It's a pleasure meeting you! &#x1F596;`
+        }
+     </script>
+</body>
+</html>
